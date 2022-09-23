@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -49,6 +50,7 @@ public class ListViewFragment extends Fragment {
                 listAdapter.submitData(getViewLifecycleOwner().getLifecycle(),objectPagingData);
             }
         });
+
 
         RecyclerView rvGallery = (RecyclerView) view.findViewById(R.id.rvList);
         rvGallery.setAdapter(listAdapter);
